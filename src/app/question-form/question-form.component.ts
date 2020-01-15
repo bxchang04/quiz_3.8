@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { Question } from '../../quiz.model'; //check this
+import { Question } from '../quiz.model'; //check this
 
 @Component({
   selector: 'app-question-form',

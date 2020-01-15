@@ -12,7 +12,7 @@ import { QuestionsComponent } from './questions/questions.component';
 
 import { RouterModule, Routes } from '@angular/router';
 
-import { Component } from '@angular/core';
+// import { Component } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatCardModule, MatButtonModule } from '@angular/material';
 
