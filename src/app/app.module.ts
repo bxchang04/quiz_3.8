@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component'; //check this
+import { AppComponent } from './app.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { QuestionFormComponent } from './question-form/question-form.component'; //check this
@@ -42,11 +42,4 @@ const appRoutes: Routes = [
   providers: [],
   bootstrap: [AppComponent]
 })
-
-@Component({
-  selector: 'app-root',
-  template: '<router-outlet></router-outlet>'
-})
-
 export class AppModule { }
-export class AppComponent {}
