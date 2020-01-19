@@ -1,20 +1,101 @@
-[
-  {
+[{
     "label": "What is 2 + 3?",
-    "choices": [
-      {"value": "5", "correct": true},
-      {"value": "15", "correct": false},
-      {"value": "3", "correct": false},
-      {"value": "pi", "correct": false}
+    "choices": [{
+        "value": "5",
+        "correct": true
+      },
+      {
+        "value": "15",
+        "correct": false
+      },
+      {
+        "value": "3",
+        "correct": false
+      },
+      {
+        "value": "0",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "label": "What is 7 + 3?",
+    "choices": [{
+        "value": "10",
+        "correct": true
+      },
+      {
+        "value": "7",
+        "correct": false
+      },
+      {
+        "value": "3",
+        "correct": false
+      },
+      {
+        "value": "-3",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "label": "What is 1-7?",
+    "choices": [{
+        "value": "6",
+        "correct": false
+      },
+      {
+        "value": "3",
+        "correct": false
+      },
+      {
+        "value": "-5",
+        "correct": false
+      },
+      {
+        "value": "-6",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "label": "What is 4 - 5 ?",
+    "choices": [{
+        "value": "5",
+        "correct": false
+      },
+      {
+        "value": "2",
+        "correct": false
+      },
+      {
+        "value": "-1",
+        "correct": true
+      },
+      {
+        "value": "-3",
+        "correct": false
+      }
     ]
   },
   {
     "label": "What is 3 - 9?",
-    "choices": [
-      {"value": "3", "correct": false},
-      {"value": "-6", "correct": true},
-      {"value": "Bonjour", "correct": false},
-      {"value": "pi", "correct": false}
+    "choices": [{
+        "value": "3",
+        "correct": false
+      },
+      {
+        "value": "-6",
+        "correct": true
+      },
+      {
+        "value": "-8",
+        "correct": false
+      },
+      {
+        "value": "-10",
+        "correct": false
+      }
     ]
   }
 ]
