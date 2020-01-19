@@ -1,15 +1,16 @@
-<div class="quiz" *ngIf="quiz">
-
-  <div class="questions" *ngIf="!showResults">
-    <app-question-form
-      [question]="quiz.questions[currentQuestionIndex]"
-      (onChoiceMade)="updateChoice($event)">
-    </app-question-form>
-
-    <button
-      class="btn btn-success"
-      (click)="nextOrViewResults()"
-      [disabled]="!answers.values[currentQuestionIndex]"
-    >{{currentQuestionIndex === quiz.questions.length - 1 ? 'View results' : 'Next'}}</button>
+<div>
+  <mat-card color="primary">
+    <mat-card-title class="title"> Quizzes</mat-card-title>
+  </mat-card>
+  <div *ngFor="let q of quiz">
+    <mat-card>
+        <mat-card-title>{{q.label}}</mat-card-title>
+        <mat-card-subtitle>{{q.description}}</mat-card-subtitle>
+        <mat-card-actions>
+          <button mat-button color="secondary" class="btn btn-primary">
+            <a routerLink="/{{q.name}}" class="btn btn-primary">Select this quiz</a>
+          </button>
+        </mat-card-actions>
+    </mat-card>
   </div>
 </div>
