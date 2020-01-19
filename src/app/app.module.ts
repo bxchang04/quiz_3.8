@@ -16,6 +16,14 @@ import { RouterModule, Routes } from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatCardModule, MatButtonModule } from '@angular/material';
 
+import { MatRadioModule } from '@angular/material/radio';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+// import { HtmlDecode } from './htmlDecode.pipe';
+
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
   { path: ':quizId', component: QuestionsComponent },
@@ -29,6 +37,7 @@ const appRoutes: Routes = [
     ResultsComponent,
     QuestionsComponent,
     WelcomeComponent,
+    // HtmlDecode
   ],
   imports: [
     BrowserModule,
@@ -37,7 +46,13 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatRadioModule,
+    MatToolbarModule,
+    MatListModule,
+    MatChipsModule,
+    MatTooltipModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
